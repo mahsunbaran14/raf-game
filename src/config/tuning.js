@@ -10,6 +10,7 @@ export const TUNING = {
   CLUSTER_THRESHOLD: 4,  // ASSUMPTION: 4+ aynı renk ortogonal küme temizlenir
   TRAY_SIZE: 3,          // ASSUMPTION: tepside 3 parça
   WAVE_LENGTH: 8,        // ASSUMPTION: wave = 8 yerleştirme
+  QUEUE_SIZE: 5,         // kuyruk uzunluğu (tepsi yenilenirken sabit kalır)
   // zorluk adımları (brief §2.4)
   TROMINO_WAVE: 2,       // wave 2: tromino + L
   EXTRA_COLOR_WAVE: 4,   // wave 4: 4. renk
