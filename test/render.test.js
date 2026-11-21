@@ -4,7 +4,10 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { TUNING } from '../src/config/tuning.js';
 import { layoutFor } from '../src/render/layout.js';
-import { canPlace, pieceOf } from '../src/render/validity.js';
+import { canPlace, cellAt, pieceOf, resolveDrop } from '../src/render/validity.js';
+import { createExportButton, TELEMETRY_FILE } from '../src/render/export.js';
+import { createTelemetry } from '../src/core/telemetry.js';
+import { SHAPES } from '../src/sim/shapes.js';
 import { initState } from '../src/sim/state.js';
 import { step } from '../src/sim/step.js';
 import { EVENT } from '../src/core/events.js';
@@ -157,6 +160,78 @@ test('canPlace agrees with the step placement gate at every origin', () => {
   }
 });
 
+test('touch targets stay at least 44px in portrait and landscape (AC2.5)', () => {
+  for (const [w, h] of [
+    [360, 640],
+    [1280, 720],
+  ]) {
+    const l = layoutFor(w, h);
+    assert.ok(l.cell >= 44, `${w}x${h}: cell ${l.cell} must be at least 44px`);
+    assert.ok(l.slot >= 44, `${w}x${h}: tray slot hit area ${l.slot} must be at least 44px`);
+    assert.ok(l.slot >= l.cell, `${w}x${h}: tray hit area covers the piece cell`);
+    assertBoardInside(l, w, h);
+    assertTrayInside(l, w, h);
+  }
+});
+
+test('cellAt maps a pointer to the cell under it', () => {
+  const l = layoutFor(360, 640);
+  for (const [cx, cy] of [
+    [0, 0],
+    [3, 5],
+    [N - 1, N - 1],
+  ]) {
+    const centre = { x: l.boardX + cx * l.cell + l.cell / 2, y: l.boardY + cy * l.cell + l.cell / 2 };
+    assert.deepEqual(cellAt(l, centre), { x: cx, y: cy });
+  }
+});
+
+test('TOUCH_OFFSET lifts the ghost but never moves the resolved drop cell (AC2.5)', () => {
+  const l = layoutFor(360, 640);
+  const single = SHAPES.find((s) => s.id === 's');
+  const square = SHAPES.find((s) => s.id === 'o4');
+  const pointer = { x: l.boardX + l.cell * 3 + l.cell / 2, y: l.boardY + l.cell * 4 + l.cell / 2 };
+  const offsets = [0, TUNING.TOUCH_OFFSET, -TUNING.TOUCH_OFFSET];
+  const spots = [
+    pointer,
+    { x: l.boardX + l.cell * 2 + 1, y: l.boardY + l.cell * 6 + 1 },
+    { x: l.boardX + l.cell * 5 + l.cell - 1, y: l.boardY + l.cell * 2 + l.cell - 1 },
+    { x: l.boardX + l.cell * 4, y: l.boardY + l.cell * 3 },
+  ];
+
+  for (const shape of [single, square]) {
+    const base = resolveDrop(l, pointer, 0, shape);
+    for (const offset of offsets) {
+      const drop = resolveDrop(l, pointer, offset, shape);
+      assert.deepEqual(drop.origin, base.origin, `origin changed with offset ${offset}`);
+      assert.equal(drop.ghostY, base.ghostY - offset, 'ghost is lifted by the offset');
+      assert.equal(drop.ghostX, base.ghostX, 'offset never shifts horizontally');
+    }
+  }
+
+  // A 1x1 piece drops on the cell under the finger for every offset.
+  for (const spot of spots) {
+    for (const offset of offsets) {
+      assert.deepEqual(
+        resolveDrop(l, spot, offset, single).origin,
+        cellAt(l, spot),
+        `1x1 origin drifted at ${spot.x},${spot.y} with offset ${offset}`,
+      );
+    }
+  }
+});
+
+test('resolveDrop centres multi-cell ghosts on the pointer and keeps the origin stable', () => {
+  const l = layoutFor(1280, 720);
+  const square = SHAPES.find((s) => s.id === 'o4');
+  const pointer = { x: l.boardX + l.cell * 2, y: l.boardY + l.cell * 2 };
+  const drop = resolveDrop(l, pointer, TUNING.TOUCH_OFFSET, square);
+  assert.equal(drop.origin.x, 1, 'a 2x2 piece centres its top-left one cell up-left');
+  assert.equal(drop.origin.y, 1);
+  assert.equal(drop.ghostX, l.boardX + l.cell, 'ghost left edge is a cell before the pointer');
+  assert.equal(drop.ghostY, l.boardY + l.cell - TUNING.TOUCH_OFFSET);
+});
+
 function fakeStorage(initial = {}) {
   const map = new Map(Object.entries(initial));
   return {
@@ -274,4 +349,98 @@ test('recordRun still advances the in-memory best when storage rejects writes', 
   const save = recordRun(77, broken);
   assert.equal(save.best, 77);
   assert.equal(save.totalRuns, 1);
+});
+
+function fakeDoc() {
+  const elements = [];
+  return {
+    elements,
+    createElement(tag) {
+      const el = {
+        tag,
+        textContent: '',
+        type: '',
+        href: '',
+        download: '',
+        attrs: {},
+        clicks: 0,
+        listeners: {},
+        setAttribute(name, value) {
+          this.attrs[name] = value;
+        },
+        addEventListener(type, handler) {
+          this.listeners[type] = handler;
+        },
+        click() {
+          this.clicks += 1;
+        },
+      };
+      elements.push(el);
+      return el;
+    },
+  };
+}
+
+function fakeContainer() {
+  return {
+    children: [],
+    appendChild(el) {
+      this.children.push(el);
+    },
+  };
+}
+
+test('debug export stays hidden unless the URL contains debug (brief §6.1)', () => {
+  const telemetry = createTelemetry(8);
+  const doc = fakeDoc();
+  const container = fakeContainer();
+  const hidden = createExportButton(telemetry, container, {
+    location: { search: '?foo=1' },
+    document: doc,
+  });
+  assert.equal(hidden, null);
+  assert.equal(container.children.length, 0);
+
+  const shown = createExportButton(telemetry, container, {
+    location: { search: '?debug=1' },
+    document: doc,
+  });
+  assert.equal(shown.textContent, 'Export');
+  assert.equal(shown.type, 'button');
+  assert.equal(container.children.length, 1);
+});
+
+test('debug export downloads the telemetry JSON as a blob (AC1.7)', async () => {
+  const telemetry = createTelemetry(8);
+  telemetry.log({ type: 'run_started', seed: 3 });
+  let blob = null;
+  const revoked = [];
+  const urlApi = {
+    createObjectURL(value) {
+      blob = value;
+      return 'blob:raf-test';
+    },
+    revokeObjectURL(value) {
+      revoked.push(value);
+    },
+  };
+  const doc = fakeDoc();
+  const container = fakeContainer();
+  const button = createExportButton(telemetry, container, {
+    location: { search: '?debug' },
+    document: doc,
+    Blob,
+    URL: urlApi,
+  });
+
+  button.listeners.click({ preventDefault() {} });
+
+  assert.equal(blob.type, 'application/json');
+  const parsed = JSON.parse(await blob.text());
+  assert.deepEqual(parsed, JSON.parse(telemetry.toJSON()));
+  const anchor = doc.elements.find((el) => el.tag === 'a');
+  assert.equal(anchor.download, TELEMETRY_FILE);
+  assert.equal(anchor.href, 'blob:raf-test');
+  assert.equal(anchor.clicks, 1);
+  assert.deepEqual(revoked, ['blob:raf-test']);
 });
