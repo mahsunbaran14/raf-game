@@ -1,0 +1,3293 @@
+{
+  "v": 1,
+  "generatedAt": "2026-11-21T12:25:42.163Z",
+  "days": [
+    {
+      "date": "2026-11-21",
+      "seed": 1058264886,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 75,
+      "ms": 24,
+      "retried": false
+    },
+    {
+      "date": "2026-11-22",
+      "seed": 1041487267,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 86,
+      "ms": 15,
+      "retried": false
+    },
+    {
+      "date": "2026-11-23",
+      "seed": 1024709648,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 66,
+      "ms": 11,
+      "retried": false
+    },
+    {
+      "date": "2026-11-24",
+      "seed": 1142152981,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 30,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2026-11-25",
+      "seed": 1125375362,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 45,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-11-26",
+      "seed": 1108597743,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 32,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2026-11-27",
+      "seed": 1091820124,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2026-11-28",
+      "seed": 1209263457,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 47,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-11-29",
+      "seed": 1192485838,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 71,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-11-30",
+      "seed": 3121661760,
+      "attempts": 1,
+      "wave": 27,
+      "placements": 217,
+      "ms": 15,
+      "retried": false
+    },
+    {
+      "date": "2026-12-01",
+      "seed": 3996867195,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 60,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-12-02",
+      "seed": 4013644814,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 34,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2026-12-03",
+      "seed": 4030422433,
+      "attempts": 1,
+      "wave": 20,
+      "placements": 160,
+      "ms": 10,
+      "retried": false
+    },
+    {
+      "date": "2026-12-04",
+      "seed": 4047200052,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 73,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2026-12-05",
+      "seed": 4063977671,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 70,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-12-06",
+      "seed": 4080755290,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 61,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2026-12-07",
+      "seed": 4097532909,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 64,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-12-08",
+      "seed": 3845868624,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 51,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2026-12-09",
+      "seed": 3862646243,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 39,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2026-12-10",
+      "seed": 4080902385,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 30,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2026-12-11",
+      "seed": 4064124766,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 75,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-12-12",
+      "seed": 4047347147,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2026-12-13",
+      "seed": 4030569528,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 59,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2026-12-14",
+      "seed": 4148012861,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 35,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2026-12-15",
+      "seed": 4131235242,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 84,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-12-16",
+      "seed": 4114457623,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2026-12-17",
+      "seed": 4097680004,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 43,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2026-12-18",
+      "seed": 3946681433,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 38,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2026-12-19",
+      "seed": 3929903814,
+      "attempts": 1,
+      "wave": 30,
+      "placements": 238,
+      "ms": 18,
+      "retried": false
+    },
+    {
+      "date": "2026-12-20",
+      "seed": 4181715194,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 61,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2026-12-21",
+      "seed": 4198492813,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 46,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2026-12-22",
+      "seed": 4148159956,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 64,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2026-12-23",
+      "seed": 4164937575,
+      "attempts": 1,
+      "wave": 19,
+      "placements": 149,
+      "ms": 9,
+      "retried": false
+    },
+    {
+      "date": "2026-12-24",
+      "seed": 4114604718,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 29,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2026-12-25",
+      "seed": 4131382337,
+      "attempts": 1,
+      "wave": 20,
+      "placements": 157,
+      "ms": 9,
+      "retried": false
+    },
+    {
+      "date": "2026-12-26",
+      "seed": 4081049480,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 67,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2026-12-27",
+      "seed": 4097827099,
+      "attempts": 1,
+      "wave": 34,
+      "placements": 274,
+      "ms": 14,
+      "retried": false
+    },
+    {
+      "date": "2026-12-28",
+      "seed": 4047494242,
+      "attempts": 1,
+      "wave": 17,
+      "placements": 133,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2026-12-29",
+      "seed": 4064271861,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 30,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2026-12-30",
+      "seed": 1598212131,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 61,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2026-12-31",
+      "seed": 1581434512,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 32,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-01",
+      "seed": 4016442164,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 30,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-02",
+      "seed": 4066775021,
+      "attempts": 1,
+      "wave": 23,
+      "placements": 185,
+      "ms": 10,
+      "retried": false
+    },
+    {
+      "date": "2027-01-03",
+      "seed": 4049997402,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 100,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-01-04",
+      "seed": 3966109307,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 79,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-01-05",
+      "seed": 3949331688,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 107,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-01-06",
+      "seed": 3999664545,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 38,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-07",
+      "seed": 3982886926,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 86,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-01-08",
+      "seed": 3898998831,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 88,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-01-09",
+      "seed": 3882221212,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 25,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-10",
+      "seed": 1784871742,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 102,
+      "ms": 9,
+      "retried": false
+    },
+    {
+      "date": "2027-01-11",
+      "seed": 1801649361,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 50,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-01-12",
+      "seed": 1751316504,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-13",
+      "seed": 1768094123,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 55,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-01-14",
+      "seed": 1851982218,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 54,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-15",
+      "seed": 1868759837,
+      "attempts": 1,
+      "wave": 21,
+      "placements": 167,
+      "ms": 11,
+      "retried": false
+    },
+    {
+      "date": "2027-01-16",
+      "seed": 1818426980,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 36,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-17",
+      "seed": 1835204599,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 62,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-01-18",
+      "seed": 1650650790,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 76,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-01-19",
+      "seed": 1667428409,
+      "attempts": 1,
+      "wave": 31,
+      "placements": 248,
+      "ms": 13,
+      "retried": false
+    },
+    {
+      "date": "2027-01-20",
+      "seed": 1684058933,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 55,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-21",
+      "seed": 1667281314,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 38,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-22",
+      "seed": 1650503695,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 45,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-23",
+      "seed": 1633726076,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 34,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-24",
+      "seed": 1616948457,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 35,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-25",
+      "seed": 1600170838,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 65,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-01-26",
+      "seed": 1583393219,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 54,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-01-27",
+      "seed": 1566615600,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 61,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-28",
+      "seed": 1818279885,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 43,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-01-29",
+      "seed": 1801502266,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 72,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-01-30",
+      "seed": 1583246124,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-01-31",
+      "seed": 1600023743,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 42,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-01",
+      "seed": 2453228679,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 40,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-02",
+      "seed": 2470006298,
+      "attempts": 1,
+      "wave": 22,
+      "placements": 176,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-02-03",
+      "seed": 2486783917,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-04",
+      "seed": 2369340584,
+      "attempts": 1,
+      "wave": 24,
+      "placements": 191,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-02-05",
+      "seed": 2386118203,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 26,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-06",
+      "seed": 2402895822,
+      "attempts": 1,
+      "wave": 50,
+      "placements": 400,
+      "ms": 14,
+      "retried": false
+    },
+    {
+      "date": "2027-02-07",
+      "seed": 2419673441,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 108,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-02-08",
+      "seed": 2302230108,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 119,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-02-09",
+      "seed": 2319007727,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 50,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-02-10",
+      "seed": 2537263869,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 123,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-02-11",
+      "seed": 2520486250,
+      "attempts": 1,
+      "wave": 27,
+      "placements": 217,
+      "ms": 9,
+      "retried": false
+    },
+    {
+      "date": "2027-02-12",
+      "seed": 2503708631,
+      "attempts": 1,
+      "wave": 24,
+      "placements": 186,
+      "ms": 8,
+      "retried": false
+    },
+    {
+      "date": "2027-02-13",
+      "seed": 2486931012,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-14",
+      "seed": 2470153393,
+      "attempts": 1,
+      "wave": 21,
+      "placements": 164,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-02-15",
+      "seed": 2453375774,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 43,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-02-16",
+      "seed": 2436598155,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 38,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-17",
+      "seed": 2419820536,
+      "attempts": 1,
+      "wave": 19,
+      "placements": 147,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-02-18",
+      "seed": 2403042917,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 82,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-02-19",
+      "seed": 2386265298,
+      "attempts": 1,
+      "wave": 28,
+      "placements": 218,
+      "ms": 8,
+      "retried": false
+    },
+    {
+      "date": "2027-02-20",
+      "seed": 2101192870,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 39,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-21",
+      "seed": 2117970489,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 58,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-02-22",
+      "seed": 2067637632,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 55,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-02-23",
+      "seed": 2084415251,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-24",
+      "seed": 2168303346,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 68,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-02-25",
+      "seed": 2185080965,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 63,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-02-26",
+      "seed": 2134748108,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 65,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-02-27",
+      "seed": 2151525727,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 49,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-02-28",
+      "seed": 2235413822,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 32,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-01",
+      "seed": 3202083294,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 63,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-02",
+      "seed": 3185305675,
+      "attempts": 1,
+      "wave": 20,
+      "placements": 157,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-03-03",
+      "seed": 3168528056,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 110,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-03-04",
+      "seed": 3285971389,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 30,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-05",
+      "seed": 3269193770,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 32,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-06",
+      "seed": 3252416151,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 49,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-07",
+      "seed": 3235638532,
+      "attempts": 1,
+      "wave": 20,
+      "placements": 161,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-03-08",
+      "seed": 3084639961,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 38,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-09",
+      "seed": 3067862342,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 44,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-10",
+      "seed": 3118048104,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 94,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-03-11",
+      "seed": 3134825723,
+      "attempts": 1,
+      "wave": 16,
+      "placements": 124,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-03-12",
+      "seed": 3151603342,
+      "attempts": 1,
+      "wave": 22,
+      "placements": 172,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-03-13",
+      "seed": 3168380961,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-14",
+      "seed": 3185158580,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 62,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-15",
+      "seed": 3201936199,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 68,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-16",
+      "seed": 3218713818,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 65,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-17",
+      "seed": 3235491437,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 48,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-18",
+      "seed": 2983827152,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 44,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-19",
+      "seed": 3000604771,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 52,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-20",
+      "seed": 736170659,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 118,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-03-21",
+      "seed": 719393040,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 32,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-22",
+      "seed": 769725897,
+      "attempts": 1,
+      "wave": 25,
+      "placements": 200,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-03-23",
+      "seed": 752948278,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 38,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-24",
+      "seed": 803281135,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 72,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-03-25",
+      "seed": 786503516,
+      "attempts": 1,
+      "wave": 22,
+      "placements": 176,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-03-26",
+      "seed": 836836373,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-27",
+      "seed": 820058754,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 109,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-03-28",
+      "seed": 870391611,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 107,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-03-29",
+      "seed": 853613992,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 119,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-03-30",
+      "seed": 3319673722,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 34,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-03-31",
+      "seed": 3336451341,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-01",
+      "seed": 3791524753,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 102,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-04-02",
+      "seed": 3741191896,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 29,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-03",
+      "seed": 3757969515,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 47,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-04-04",
+      "seed": 3841857610,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 71,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-04-05",
+      "seed": 3858635229,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 76,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-04-06",
+      "seed": 3808302372,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-07",
+      "seed": 3825079991,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 53,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-08",
+      "seed": 3640526182,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-04-09",
+      "seed": 3657303801,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 34,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-10",
+      "seed": 1728127879,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-11",
+      "seed": 1711350260,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 49,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-04-12",
+      "seed": 1761683117,
+      "attempts": 1,
+      "wave": 17,
+      "placements": 135,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-04-13",
+      "seed": 1744905498,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 121,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-04-14",
+      "seed": 1661017403,
+      "attempts": 1,
+      "wave": 25,
+      "placements": 202,
+      "ms": 8,
+      "retried": false
+    },
+    {
+      "date": "2027-04-15",
+      "seed": 1644239784,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 40,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-16",
+      "seed": 1694572641,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 42,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-17",
+      "seed": 1677795022,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-18",
+      "seed": 1593906927,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 26,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-19",
+      "seed": 1577129308,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 28,
+      "ms": 1,
+      "retried": false
+    },
+    {
+      "date": "2027-04-20",
+      "seed": 3573121516,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 34,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-21",
+      "seed": 3589899135,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 51,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-04-22",
+      "seed": 3606676754,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 44,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-23",
+      "seed": 3623454373,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 60,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-04-24",
+      "seed": 3506011040,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 93,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-04-25",
+      "seed": 3522788659,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 119,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-04-26",
+      "seed": 3539566278,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 52,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-04-27",
+      "seed": 3556343897,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-28",
+      "seed": 3707342468,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 63,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-04-29",
+      "seed": 3724120087,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 48,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-04-30",
+      "seed": 3673934325,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 45,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-01",
+      "seed": 1839189776,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 36,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-02",
+      "seed": 1889522633,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 29,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-03",
+      "seed": 1872745014,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 61,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-05-04",
+      "seed": 1923077871,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 28,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-05",
+      "seed": 1906300252,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-06",
+      "seed": 1956633109,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 36,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-07",
+      "seed": 1939855490,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 30,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-08",
+      "seed": 1990188347,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 29,
+      "ms": 1,
+      "retried": false
+    },
+    {
+      "date": "2027-05-09",
+      "seed": 1973410728,
+      "attempts": 1,
+      "wave": 43,
+      "placements": 341,
+      "ms": 12,
+      "retried": false
+    },
+    {
+      "date": "2027-05-10",
+      "seed": 144503162,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 54,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-11",
+      "seed": 161280781,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 76,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-05-12",
+      "seed": 110947924,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 88,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-13",
+      "seed": 127725543,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 46,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-05-14",
+      "seed": 77392686,
+      "attempts": 1,
+      "wave": 22,
+      "placements": 174,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-05-15",
+      "seed": 94170305,
+      "attempts": 1,
+      "wave": 18,
+      "placements": 145,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-05-16",
+      "seed": 43837448,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 72,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-17",
+      "seed": 60615067,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 59,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-18",
+      "seed": 10282210,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 69,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-19",
+      "seed": 27059829,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 102,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-05-20",
+      "seed": 43690353,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 62,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-21",
+      "seed": 26912734,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 95,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-05-22",
+      "seed": 10135115,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 60,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-23",
+      "seed": 4288324792,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 107,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-05-24",
+      "seed": 110800829,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 89,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-05-25",
+      "seed": 94023210,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 83,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-26",
+      "seed": 77245591,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 65,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-27",
+      "seed": 60467972,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 101,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-05-28",
+      "seed": 4204436697,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 44,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-05-29",
+      "seed": 4187659078,
+      "attempts": 1,
+      "wave": 20,
+      "placements": 157,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-05-30",
+      "seed": 4237844840,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 107,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-05-31",
+      "seed": 4254622459,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 61,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-06-01",
+      "seed": 770158403,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 80,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-06-02",
+      "seed": 786936022,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 35,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-03",
+      "seed": 803713641,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-04",
+      "seed": 820491260,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 25,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-05",
+      "seed": 837268879,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 33,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-06",
+      "seed": 854046498,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 113,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-06-07",
+      "seed": 870824117,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 27,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-08",
+      "seed": 887601736,
+      "attempts": 1,
+      "wave": 16,
+      "placements": 129,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-06-09",
+      "seed": 904379355,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 78,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-06-10",
+      "seed": 854193593,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 89,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-06-11",
+      "seed": 837415974,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 117,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-06-12",
+      "seed": 820638355,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 54,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-06-13",
+      "seed": 803860736,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 43,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-06-14",
+      "seed": 921304069,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 32,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-15",
+      "seed": 904526450,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 43,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-16",
+      "seed": 887748831,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 40,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-17",
+      "seed": 870971212,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 84,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-06-18",
+      "seed": 988414545,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 23,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-19",
+      "seed": 971636926,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 39,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-20",
+      "seed": 3102541634,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-06-21",
+      "seed": 3119319253,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 73,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-06-22",
+      "seed": 3068986396,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 78,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-06-23",
+      "seed": 3085764015,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 51,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-24",
+      "seed": 3035431158,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 36,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-25",
+      "seed": 3052208777,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 86,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-06-26",
+      "seed": 3001875920,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 50,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-27",
+      "seed": 3018653539,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 27,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-28",
+      "seed": 3236762586,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 46,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-06-29",
+      "seed": 3253540205,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 37,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-06-30",
+      "seed": 3203354443,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 46,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-01",
+      "seed": 3496969626,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-02",
+      "seed": 3480192007,
+      "attempts": 1,
+      "wave": 18,
+      "placements": 139,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-07-03",
+      "seed": 3463414388,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 45,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-04",
+      "seed": 3446636769,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 45,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-05",
+      "seed": 3429859150,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 36,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-06",
+      "seed": 3413081531,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 102,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-07-07",
+      "seed": 3396303912,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 60,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-08",
+      "seed": 3379526293,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 37,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-09",
+      "seed": 3362748674,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 92,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-07-10",
+      "seed": 1265399204,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 34,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-11",
+      "seed": 1282176823,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 60,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-12",
+      "seed": 1298954442,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 74,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-13",
+      "seed": 1315732061,
+      "attempts": 1,
+      "wave": 24,
+      "placements": 193,
+      "ms": 8,
+      "retried": false
+    },
+    {
+      "date": "2027-07-14",
+      "seed": 1198288728,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 39,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-15",
+      "seed": 1215066347,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 42,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-16",
+      "seed": 1231843966,
+      "attempts": 1,
+      "wave": 22,
+      "placements": 173,
+      "ms": 9,
+      "retried": false
+    },
+    {
+      "date": "2027-07-17",
+      "seed": 1248621585,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 29,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-18",
+      "seed": 1131178252,
+      "attempts": 1,
+      "wave": 19,
+      "placements": 148,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-07-19",
+      "seed": 1147955871,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 63,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-20",
+      "seed": 3178489055,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 67,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-21",
+      "seed": 3161711436,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 56,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-22",
+      "seed": 3212044293,
+      "attempts": 1,
+      "wave": 43,
+      "placements": 347,
+      "ms": 12,
+      "retried": false
+    },
+    {
+      "date": "2027-07-23",
+      "seed": 3195266674,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 30,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-24",
+      "seed": 3111378579,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-25",
+      "seed": 3094600960,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 37,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-26",
+      "seed": 3144933817,
+      "attempts": 1,
+      "wave": 16,
+      "placements": 127,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-07-27",
+      "seed": 3128156198,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 53,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-28",
+      "seed": 3312710007,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 87,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-29",
+      "seed": 3295932388,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 63,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-07-30",
+      "seed": 3077676246,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 34,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-07-31",
+      "seed": 3094453865,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 99,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-01",
+      "seed": 3508354493,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 54,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-08-02",
+      "seed": 3458021636,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 42,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-08-03",
+      "seed": 3474799255,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 67,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-08-04",
+      "seed": 3424466398,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 67,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-05",
+      "seed": 3441244017,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 34,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-08-06",
+      "seed": 3390911160,
+      "attempts": 1,
+      "wave": 32,
+      "placements": 257,
+      "ms": 9,
+      "retried": false
+    },
+    {
+      "date": "2027-08-07",
+      "seed": 3407688779,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 95,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-08",
+      "seed": 3357355922,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 68,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-08-09",
+      "seed": 3374133541,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 91,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-10",
+      "seed": 3055505875,
+      "attempts": 1,
+      "wave": 16,
+      "placements": 127,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-08-11",
+      "seed": 3038728256,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 71,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-08-12",
+      "seed": 3089061113,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 56,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-08-13",
+      "seed": 3072283494,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 103,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-14",
+      "seed": 3122616351,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 95,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-15",
+      "seed": 3105838732,
+      "attempts": 1,
+      "wave": 17,
+      "placements": 134,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-08-16",
+      "seed": 3156171589,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 36,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-08-17",
+      "seed": 3139393970,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 108,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-18",
+      "seed": 3189726827,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 35,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-08-19",
+      "seed": 3172949208,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 49,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-08-20",
+      "seed": 1142416024,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 59,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-08-21",
+      "seed": 1159193643,
+      "attempts": 1,
+      "wave": 17,
+      "placements": 136,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-08-22",
+      "seed": 1175971262,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 48,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-08-23",
+      "seed": 1192748881,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 39,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-08-24",
+      "seed": 1209526500,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 35,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-08-25",
+      "seed": 1226304119,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 78,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-26",
+      "seed": 1243081738,
+      "attempts": 1,
+      "wave": 31,
+      "placements": 247,
+      "ms": 9,
+      "retried": false
+    },
+    {
+      "date": "2027-08-27",
+      "seed": 1259859357,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 25,
+      "ms": 1,
+      "retried": false
+    },
+    {
+      "date": "2027-08-28",
+      "seed": 1008195072,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 67,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-08-29",
+      "seed": 1024972691,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 91,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-08-30",
+      "seed": 3390764065,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 40,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-08-31",
+      "seed": 3373986446,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 22,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-01",
+      "seed": 3703451580,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 82,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-02",
+      "seed": 3753784437,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 38,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-03",
+      "seed": 3737006818,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 56,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-04",
+      "seed": 3653118723,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 92,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-05",
+      "seed": 3636341104,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 108,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-09-06",
+      "seed": 3686673961,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 46,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-07",
+      "seed": 3669896342,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 50,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-08",
+      "seed": 3854450151,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-09",
+      "seed": 3837672532,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 83,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-10",
+      "seed": 3619416390,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 29,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-11",
+      "seed": 3636194009,
+      "attempts": 1,
+      "wave": 28,
+      "placements": 224,
+      "ms": 8,
+      "retried": false
+    },
+    {
+      "date": "2027-09-12",
+      "seed": 3585861152,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 115,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-09-13",
+      "seed": 3602638771,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 80,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-14",
+      "seed": 3686526866,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 62,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-15",
+      "seed": 3703304485,
+      "attempts": 1,
+      "wave": 19,
+      "placements": 151,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-09-16",
+      "seed": 3652971628,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 67,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-17",
+      "seed": 3669749247,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 106,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-09-18",
+      "seed": 3753637342,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 106,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-09-19",
+      "seed": 3770414961,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 34,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-20",
+      "seed": 1907952157,
+      "attempts": 1,
+      "wave": 14,
+      "placements": 110,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-09-21",
+      "seed": 1891174538,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 104,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-09-22",
+      "seed": 1874396919,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 94,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-09-23",
+      "seed": 1857619300,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-24",
+      "seed": 1840841681,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 42,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-25",
+      "seed": 1824064062,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 32,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-26",
+      "seed": 1807286443,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 61,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-09-27",
+      "seed": 1790508824,
+      "attempts": 1,
+      "wave": 13,
+      "placements": 101,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-09-28",
+      "seed": 1773731205,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-09-29",
+      "seed": 1756953586,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 64,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-09-30",
+      "seed": 1807139348,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 32,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-10-01",
+      "seed": 3548406098,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 30,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-10-02",
+      "seed": 3531628479,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 37,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-10-03",
+      "seed": 3514850860,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 29,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-10-04",
+      "seed": 3498073241,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 48,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-10-05",
+      "seed": 3481295622,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 88,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-10-06",
+      "seed": 3464518003,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 119,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-10-07",
+      "seed": 3447740384,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 77,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-10-08",
+      "seed": 3699404669,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 86,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-10-09",
+      "seed": 3682627050,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 25,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-10",
+      "seed": 3464370908,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 40,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-11",
+      "seed": 3481148527,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 47,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-10-12",
+      "seed": 3497926146,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 36,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-13",
+      "seed": 3514703765,
+      "attempts": 1,
+      "wave": 17,
+      "placements": 137,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-10-14",
+      "seed": 3397260432,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 27,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-15",
+      "seed": 3414038051,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-16",
+      "seed": 3430815670,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 39,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-17",
+      "seed": 3447593289,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 47,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-18",
+      "seed": 3598591860,
+      "attempts": 1,
+      "wave": 3,
+      "placements": 25,
+      "ms": 1,
+      "retried": false
+    },
+    {
+      "date": "2027-10-19",
+      "seed": 3615369479,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 36,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-20",
+      "seed": 3766809335,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-21",
+      "seed": 3750031716,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 82,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-10-22",
+      "seed": 3800364573,
+      "attempts": 1,
+      "wave": 15,
+      "placements": 115,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-10-23",
+      "seed": 3783586954,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 74,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-10-24",
+      "seed": 3699698859,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 56,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-10-25",
+      "seed": 3682921240,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 75,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-10-26",
+      "seed": 3733254097,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 43,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-10-27",
+      "seed": 3716476478,
+      "attempts": 1,
+      "wave": 23,
+      "placements": 183,
+      "ms": 7,
+      "retried": false
+    },
+    {
+      "date": "2027-10-28",
+      "seed": 3632588383,
+      "attempts": 1,
+      "wave": 12,
+      "placements": 93,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-10-29",
+      "seed": 3615810764,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 31,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-30",
+      "seed": 3665996526,
+      "attempts": 1,
+      "wave": 4,
+      "placements": 35,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-10-31",
+      "seed": 3682774145,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 60,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-11-01",
+      "seed": 1358478683,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 45,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-11-02",
+      "seed": 1375256302,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 69,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-11-03",
+      "seed": 1392033921,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 70,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-11-04",
+      "seed": 1408811540,
+      "attempts": 1,
+      "wave": 18,
+      "placements": 140,
+      "ms": 5,
+      "retried": false
+    },
+    {
+      "date": "2027-11-05",
+      "seed": 1425589159,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 63,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-11-06",
+      "seed": 1442366778,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 51,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-11-07",
+      "seed": 1459144397,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 81,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-11-08",
+      "seed": 1207480112,
+      "attempts": 1,
+      "wave": 10,
+      "placements": 82,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-11-09",
+      "seed": 1224257731,
+      "attempts": 1,
+      "wave": 22,
+      "placements": 176,
+      "ms": 6,
+      "retried": false
+    },
+    {
+      "date": "2027-11-10",
+      "seed": 1442513873,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 63,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-11-11",
+      "seed": 1425736254,
+      "attempts": 1,
+      "wave": 7,
+      "placements": 57,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-11-12",
+      "seed": 1408958635,
+      "attempts": 1,
+      "wave": 6,
+      "placements": 49,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-11-13",
+      "seed": 1392181016,
+      "attempts": 1,
+      "wave": 11,
+      "placements": 88,
+      "ms": 4,
+      "retried": false
+    },
+    {
+      "date": "2027-11-14",
+      "seed": 1509624349,
+      "attempts": 1,
+      "wave": 26,
+      "placements": 205,
+      "ms": 8,
+      "retried": false
+    },
+    {
+      "date": "2027-11-15",
+      "seed": 1492846730,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 72,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-11-16",
+      "seed": 1476069111,
+      "attempts": 1,
+      "wave": 8,
+      "placements": 61,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-11-17",
+      "seed": 1459291492,
+      "attempts": 1,
+      "wave": 34,
+      "placements": 267,
+      "ms": 9,
+      "retried": false
+    },
+    {
+      "date": "2027-11-18",
+      "seed": 1308292921,
+      "attempts": 1,
+      "wave": 9,
+      "placements": 74,
+      "ms": 3,
+      "retried": false
+    },
+    {
+      "date": "2027-11-19",
+      "seed": 1291515302,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 38,
+      "ms": 2,
+      "retried": false
+    },
+    {
+      "date": "2027-11-20",
+      "seed": 3690861914,
+      "attempts": 1,
+      "wave": 5,
+      "placements": 41,
+      "ms": 2,
+      "retried": false
+    }
+  ],
+  "allPass": true,
+  "totalMs": 1421
+}
