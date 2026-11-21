@@ -8,6 +8,15 @@ import { canPlace, pieceOf } from '../src/render/validity.js';
 import { initState } from '../src/sim/state.js';
 import { step } from '../src/sim/step.js';
 import { EVENT } from '../src/core/events.js';
+import {
+  SAVE_KEY,
+  LEGACY_BEST_KEY,
+  defaultSave,
+  normalizeSave,
+  applyRunResult,
+  loadSave,
+  recordRun,
+} from '../src/render/save.js';
 
 const N = TUNING.ARENA_START;
 const TRAY = TUNING.TRAY_SIZE;
@@ -146,4 +155,123 @@ test('canPlace agrees with the step placement gate at every origin', () => {
     if (firstValid === null) break;
     state = firstValid.state;
   }
+});
+
+function fakeStorage(initial = {}) {
+  const map = new Map(Object.entries(initial));
+  return {
+    getItem(key) {
+      return map.has(key) ? map.get(key) : null;
+    },
+    setItem(key, value) {
+      map.set(key, String(value));
+    },
+    raw(key) {
+      return map.get(key);
+    },
+  };
+}
+
+test('save defaults match the brief §5.6 shape', () => {
+  assert.deepEqual(defaultSave(), {
+    v: 1,
+    best: 0,
+    totalRuns: 0,
+    streak: 0,
+    dailyDone: null,
+    lastDay: null,
+    sound: true,
+    unlocks: [],
+  });
+});
+
+test('normalizeSave keeps a valid shape and preserves forward-compatible keys', () => {
+  assert.deepEqual(normalizeSave(null), defaultSave());
+  assert.deepEqual(normalizeSave('nope'), defaultSave());
+  assert.deepEqual(normalizeSave([1, 2]), defaultSave());
+
+  const messy = normalizeSave({
+    v: 2,
+    best: 'high',
+    totalRuns: -3,
+    streak: 4,
+    dailyDone: '2026-11-20',
+    sound: 'yes',
+    unlocks: 'nope',
+    futureField: 7,
+  });
+  assert.equal(messy.v, 2);
+  assert.equal(messy.best, 0);
+  assert.equal(messy.totalRuns, 0);
+  assert.equal(messy.streak, 4);
+  assert.equal(messy.dailyDone, '2026-11-20');
+  assert.equal(messy.sound, true);
+  assert.deepEqual(messy.unlocks, []);
+  assert.equal(messy.futureField, 7);
+});
+
+test('applyRunResult keeps the best score and counts every run', () => {
+  const first = applyRunResult(defaultSave(), 120);
+  assert.equal(first.best, 120);
+  assert.equal(first.totalRuns, 1);
+  const lower = applyRunResult(first, 30);
+  assert.equal(lower.best, 120);
+  assert.equal(lower.totalRuns, 2);
+  const higher = applyRunResult(lower, 500);
+  assert.equal(higher.best, 500);
+  assert.equal(higher.totalRuns, 3);
+  const zero = applyRunResult(higher, 0);
+  assert.equal(zero.best, 500);
+  assert.equal(zero.totalRuns, 4);
+});
+
+test('loadSave reads raf.save and the legacy raf.best number', () => {
+  const saved = loadSave(fakeStorage({ [SAVE_KEY]: JSON.stringify({ v: 1, best: 50, totalRuns: 2 }) }));
+  assert.equal(saved.best, 50);
+  assert.equal(saved.totalRuns, 2);
+
+  const legacyOnly = loadSave(fakeStorage({ [LEGACY_BEST_KEY]: '80' }));
+  assert.equal(legacyOnly.best, 80);
+
+  const both = loadSave(
+    fakeStorage({ [SAVE_KEY]: JSON.stringify({ v: 1, best: 50 }), [LEGACY_BEST_KEY]: '80' }),
+  );
+  assert.equal(both.best, 80);
+
+  const corrupt = loadSave(fakeStorage({ [SAVE_KEY]: '{not json', [LEGACY_BEST_KEY]: '12' }));
+  assert.equal(corrupt.best, 12);
+});
+
+test('recordRun persists the merged save and returns the live best', () => {
+  const storage = fakeStorage();
+  const first = recordRun(200, storage);
+  assert.equal(first.best, 200);
+  assert.equal(first.totalRuns, 1);
+  const written = JSON.parse(storage.raw(SAVE_KEY));
+  assert.deepEqual(written, first);
+  assert.equal(written.v, 1);
+  assert.ok(Object.hasOwn(written, 'streak'));
+  assert.ok(Object.hasOwn(written, 'dailyDone'));
+  assert.ok(Object.hasOwn(written, 'lastDay'));
+  assert.ok(Object.hasOwn(written, 'sound'));
+  assert.ok(Object.hasOwn(written, 'unlocks'));
+
+  const second = recordRun(90, storage);
+  assert.equal(second.best, 200);
+  assert.equal(second.totalRuns, 2);
+  assert.equal(JSON.parse(storage.raw(SAVE_KEY)).totalRuns, 2);
+});
+
+test('recordRun still advances the in-memory best when storage rejects writes', () => {
+  const broken = {
+    getItem() {
+      return null;
+    },
+    setItem() {
+      throw new Error('quota');
+    },
+  };
+  const save = recordRun(77, broken);
+  assert.equal(save.best, 77);
+  assert.equal(save.totalRuns, 1);
 });

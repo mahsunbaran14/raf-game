@@ -11,6 +11,7 @@ import { GLYPHS } from '../sim/shapes.js';
 import { PALETTE } from './palette.js';
 import { layoutFor } from './layout.js';
 import { canPlace, pieceOf } from './validity.js';
+import { loadSave, recordRun } from './save.js';
 
 const N = TUNING.ARENA_START;
 const TRAY = TUNING.TRAY_SIZE;
@@ -19,24 +20,6 @@ const SECONDS_PER_MINUTE = 0x3c; // 60
 const MS_PER_SECOND = 0x3e8; // 1000
 const POPUP_MS = 0x258; // 600ms score pop flight
 const INVALID_MS = 100; // AC1.6: visual response under 100ms
-const SAVE_KEY = 'raf.save';
-const BEST_KEY = 'raf.best';
-
-function readBest() {
-  let best = 0;
-  try {
-    const raw = globalThis.localStorage?.getItem(SAVE_KEY);
-    if (raw) {
-      const saved = JSON.parse(raw);
-      if (Number.isFinite(saved?.best)) best = saved.best;
-    }
-    const direct = Number(globalThis.localStorage?.getItem(BEST_KEY));
-    if (Number.isFinite(direct) && direct > best) best = direct;
-  } catch {
-    // Storage can be unavailable (private mode, sandbox); best stays 0.
-  }
-  return best;
-}
 
 function formatMs(ms) {
   const total = Math.max(0, Math.floor(ms / MS_PER_SECOND));
@@ -168,6 +151,7 @@ export async function createGame(container, options = {}) {
   let runEndedAt = 0;
   let activeDrag = null;
   let buttonRect = null;
+  let saveData = loadSave(options.storage);
   const tweens = [];
 
   function tween(duration, update, done) {
@@ -319,7 +303,7 @@ export async function createGame(container, options = {}) {
     const pad = Math.max(2, Math.round(Math.min(app.screen.width, app.screen.height) / 100));
     for (const key of Object.keys(hud)) hud[key].style.fontSize = fontSize;
     hud.score.text = STRINGS.score + ' ' + state.score;
-    hud.best.text = STRINGS.best + ' ' + readBest();
+    hud.best.text = STRINGS.best + ' ' + saveData.best;
     hud.wave.text = STRINGS.wave + ' ' + state.wave;
     hud.waste.text = STRINGS.waste + ' ' + state.waste;
     hud.score.position.set(pad, pad);
@@ -351,7 +335,7 @@ export async function createGame(container, options = {}) {
       STRINGS.score + ': ' + state.score,
       STRINGS.wave + ': ' + state.wave,
       STRINGS.time + ': ' + formatMs(Math.max(0, runEndedAt - runStartedAt)),
-      STRINGS.best + ': ' + readBest(),
+      STRINGS.best + ': ' + saveData.best,
     ];
     const lineGap = gap;
     const blockH =
@@ -431,6 +415,7 @@ export async function createGame(container, options = {}) {
         runEndedAt = 0;
       } else if (event.type === EVENT.RUN_ENDED) {
         runEndedAt = performance.now();
+        saveData = recordRun(event.score ?? state.score, options.storage);
       } else if (event.type === EVENT.CLUSTER_CLEARED) {
         spawnScorePop(event);
       }
