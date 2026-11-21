@@ -14,5 +14,8 @@ export const STRINGS = {
   hint1: 'Drag a piece onto the rack',
   hint2: 'Match 4+ of a color to clear',
   hint3: 'Every 4 placements the rack shrinks',
+  hintSkip: 'SKIP',
+  soundOn: 'SOUND ON',
+  soundOff: 'SOUND OFF',
   time: 'Time',
 };
