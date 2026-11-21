@@ -18,6 +18,8 @@ export const TUNING = {
   COLORS_MAX: 4,
   // puan
   SCORE_PER_CELL: 10,
+  CHAIN_MULTS: [1, 1.5, 2, 2.5], // zincir çarpanı (chain index 0..3, brief §2.2)
+  WASTE_PENALTY: 50,     // zayi x 50 ceza (brief §2.3)
   // üretim kapıları (brief §5.4)
   CORE_GATE_SEEDS: 200,
   CORE_GATE_MIN_WAVE: 4,
