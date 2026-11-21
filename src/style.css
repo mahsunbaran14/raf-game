@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #14161a;
+  color: #e8e8e8;
+  font-family: system-ui, sans-serif;
+  overflow: hidden;
+  touch-action: none;
+}
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

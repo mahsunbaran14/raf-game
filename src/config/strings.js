@@ -1,0 +1,18 @@
+// Tüm oyun içi metin İNGİLİZCE, tek dosya (brief §5.2, AC4.5).
+export const STRINGS = {
+  title: 'RAF',
+  score: 'Score',
+  best: 'Best',
+  wave: 'Wave',
+  waste: 'Waste',
+  gameOver: 'Rack Full',
+  playAgain: 'PLAY AGAIN',
+  invalidDrop: "Doesn't fit",
+  daily: 'Daily',
+  dailyDone: 'Daily complete',
+  streak: 'Streak',
+  hint1: 'Drag a piece onto the rack',
+  hint2: 'Match 4+ of a color to clear',
+  hint3: 'Every 4 placements the rack shrinks',
+  time: 'Time',
+};
