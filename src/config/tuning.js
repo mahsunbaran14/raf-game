@@ -11,6 +11,14 @@ export const TUNING = {
   TRAY_SIZE: 3,          // ASSUMPTION: tepside 3 parça
   WAVE_LENGTH: 8,        // ASSUMPTION: wave = 8 yerleştirme
   QUEUE_SIZE: 5,         // kuyruk uzunluğu (tepsi yenilenirken sabit kalır)
+  // mobil girdi (AC2.5)
+  TOUCH_OFFSET: 40,       // parça parmağın +40px üstünde görünür (AC2.5)
+  // hissiyat (AC2.2)
+  PULSE_MS: 180,         // hücre pulse 1.0→1.25→1.0 <=180 ms
+  SHAKE_PX: 6,           // shake <=6 px
+  SHAKE_MS: 120,         // shake <=120 ms
+  ONBOARDING_HINTS: 3,   // 3 ipucu (AC2.7)
+  ADS_ENABLED: false,    // midgame kancası kapalı (AC4.4 provası; SDK Sprint 4)
   // zorluk adımları (brief §2.4)
   TROMINO_WAVE: 2,       // wave 2: tromino + L
   EXTRA_COLOR_WAVE: 4,   // wave 4: 4. renk
