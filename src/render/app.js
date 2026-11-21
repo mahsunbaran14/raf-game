@@ -10,7 +10,7 @@ import { step } from '../sim/step.js';
 import { GLYPHS } from '../sim/shapes.js';
 import { PALETTE } from './palette.js';
 import { layoutFor } from './layout.js';
-import { canPlace, pieceOf } from './validity.js';
+import { canPlace, pieceOf, resolveDrop } from './validity.js';
 import { loadSave, recordRun } from './save.js';
 import { createFx, FONT_FAMILY } from './fx.js';
 
@@ -470,14 +470,12 @@ export async function createGame(container, options = {}) {
 
   function positionGhost(drag, point) {
     const { cell, boardX, boardY } = layout;
-    const off = TUNING.TOUCH_OFFSET ?? 0; // AC2.5 will lift the piece 40px on touch
-    const bounds = shapeBounds(drag.piece.shape);
-    drag.ghost.position.set(
-      point.x - (bounds.w * cell) / 2,
-      point.y - (bounds.h * cell) / 2 - off,
-    );
-    const originX = Math.round((drag.ghost.x - boardX) / cell);
-    const originY = Math.round((drag.ghost.y - boardY) / cell);
+    // resolveDrop lifts the ghost but resolves the origin from the unlifted
+    // pointer position, so the touch offset never shifts the dropped cell.
+    const drop = resolveDrop(layout, point, TUNING.TOUCH_OFFSET, drag.piece.shape);
+    drag.ghost.position.set(drop.ghostX, drop.ghostY);
+    const originX = drop.origin.x;
+    const originY = drop.origin.y;
     drag.origin = { x: originX, y: originY };
     drag.valid = canPlace(state, drag.pieceId, originX, originY);
 
