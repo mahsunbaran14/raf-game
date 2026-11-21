@@ -12,13 +12,12 @@ import { PALETTE } from './palette.js';
 import { layoutFor } from './layout.js';
 import { canPlace, pieceOf } from './validity.js';
 import { loadSave, recordRun } from './save.js';
+import { createFx, FONT_FAMILY } from './fx.js';
 
 const N = TUNING.ARENA_START;
 const TRAY = TUNING.TRAY_SIZE;
-const FONT_FAMILY = 'system-ui, sans-serif';
 const SECONDS_PER_MINUTE = 0x3c; // 60
 const MS_PER_SECOND = 0x3e8; // 1000
-const POPUP_MS = 0x258; // 600ms score pop flight
 const INVALID_MS = 100; // AC1.6: visual response under 100ms
 
 function formatMs(ms) {
@@ -84,6 +83,11 @@ export async function createGame(container, options = {}) {
   const dragLayer = new Container();
   boardLayer.addChild(boardGfx, cellGfx, cellTexts);
   piecesLayer.addChild(highlightGfx, trayLayer, dragLayer);
+
+  // --- juice (AC2.1/AC2.2) ----------------------------------------------
+  const fx = createFx(app, fxLayer);
+  const cellColors = new Map();
+  const cellKey = (x, y) => x + ',' + y;
 
   // --- HUD ---------------------------------------------------------------
   const hud = {
@@ -159,6 +163,7 @@ export async function createGame(container, options = {}) {
   }
 
   app.ticker.add((ticker) => {
+    fx.update(ticker.deltaMS);
     for (let i = tweens.length - 1; i >= 0; i -= 1) {
       const item = tweens[i];
       item.elapsed += ticker.deltaMS;
@@ -241,7 +246,9 @@ export async function createGame(container, options = {}) {
 
     cellGfx.clear();
     for (const child of cellTexts.removeChildren()) child.destroy();
+    cellColors.clear();
     for (const cellData of state.cells) {
+      cellColors.set(cellKey(cellData.x, cellData.y), cellData.c);
       const x = boardX + cellData.x * cell;
       const y = boardY + cellData.y * cell;
       cellGfx
@@ -376,35 +383,40 @@ export async function createGame(container, options = {}) {
   }
 
   // --- events ------------------------------------------------------------
-  function spawnScorePop(event) {
+  function cellColor(cellData) {
+    return cellColors.get(cellKey(cellData.x, cellData.y)) ?? PALETTE.cells[0];
+  }
+
+  // Screen-space descriptors for the fx layer: one per cell, centred.
+  function cellRects(cells) {
+    const { boardX, boardY, cell, inset, gap } = layout;
+    return cells.map((cellData) => ({
+      x: boardX + (cellData.x + 1 / 2) * cell,
+      y: boardY + (cellData.y + 1 / 2) * cell,
+      size: cell - inset * 2,
+      radius: gap,
+      color: cellColor(cellData),
+    }));
+  }
+
+  function cellCentroid(cells) {
     const { boardX, boardY, cell } = layout;
     let sumX = 0;
     let sumY = 0;
-    for (const cellData of event.cells) {
+    for (const cellData of cells) {
       sumX += cellData.x;
       sumY += cellData.y;
     }
-    const count = event.cells.length || 1;
-    const x = boardX + (sumX / count + 1 / 2) * cell;
-    const y = boardY + (sumY / count + 1 / 2) * cell;
-    const points = Math.round(TUNING.SCORE_PER_CELL * event.cells.length * event.mult);
-    const pop = new Text({
-      text: '+' + points,
-      style: {
-        fontFamily: FONT_FAMILY,
-        fontWeight: 'bold',
-        fontSize: Math.max(1, Math.round(cell / 2)),
-        fill: PALETTE.valid,
-      },
-    });
-    pop.anchor.set(1 / 2);
-    pop.position.set(x, y);
-    fxLayer.addChild(pop);
-    const startY = y;
-    tween(POPUP_MS, (k) => {
-      pop.y = startY - cell * k;
-      pop.alpha = 1 - k;
-    }, () => pop.destroy());
+    const count = cells.length || 1;
+    return {
+      x: boardX + (sumX / count + 1 / 2) * cell,
+      y: boardY + (sumY / count + 1 / 2) * cell,
+    };
+  }
+
+  // Cells occupied by the piece just placed (shape offsets from the event).
+  function placedPiece(event) {
+    return pieceOf(state.seed, event.pieceId);
   }
 
   function applyEvents(events) {
@@ -417,7 +429,31 @@ export async function createGame(container, options = {}) {
         runEndedAt = performance.now();
         saveData = recordRun(event.score ?? state.score, options.storage);
       } else if (event.type === EVENT.CLUSTER_CLEARED) {
-        spawnScorePop(event);
+        const rects = cellRects(event.cells);
+        const center = cellCentroid(event.cells);
+        for (const rect of rects) fx.burst(rect.x, rect.y, rect.color);
+        fx.pulse(rects);
+        const points = Math.round(TUNING.SCORE_PER_CELL * event.cells.length * event.mult);
+        fx.scorePop(center.x, center.y, '+' + points, {
+          fontSize: Math.max(1, Math.round(layout.cell / 2)),
+          chain: event.chain,
+          mult: event.mult,
+        });
+      } else if (event.type === EVENT.RING_COLLAPSED) {
+        fx.shake(boardLayer);
+      } else if (event.type === EVENT.PIECE_PLACED) {
+        // The new cells are not in syncBoard's snapshot yet; register them
+        // before any cluster fx asks for their color.
+        const piece = placedPiece(event);
+        const cells = piece.shape.cells.map(([dx, dy]) => ({ x: event.x + dx, y: event.y + dy }));
+        for (const cellData of cells) {
+          cellColors.set(cellKey(cellData.x, cellData.y), piece.color);
+        }
+        fx.thud(cellRects(cells));
+      } else if (event.type === EVENT.RING_RESTORED) {
+        fx.flash(boardLayer);
+      } else if (event.type === EVENT.WAVE_UP) {
+        fx.flash(hud.wave);
       }
     }
   }
@@ -588,7 +624,7 @@ export async function createGame(container, options = {}) {
       activeDrag = null;
     }
     highlightGfx.clear();
-    for (const child of fxLayer.removeChildren()) child.destroy();
+    fx.reset();
     const started = startRun(nextSeed());
     state = started.state;
     runEndedAt = 0;
